@@ -1,4 +1,5 @@
 def bubble_sort(arr)
+  raise ArgumentError unless arr.is_a?(Array)
   progress = 0
   while (progress < arr.length - 1)
     i = 0
