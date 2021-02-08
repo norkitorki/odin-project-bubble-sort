@@ -22,4 +22,10 @@ describe "#bubble_sort" do
       [0.5, 2.5, 2.8, 3.5, 4.3, 78.0]
     )
   end
+
+  it "works with positive and negative floats" do
+    expect(bubble_sort([-2.1, 69.4, 0.5, -102.0, -18.9])).to eq(
+      [-102.0, -18.9, -2.1, 0.5, 69.4]
+    )
+  end
 end
